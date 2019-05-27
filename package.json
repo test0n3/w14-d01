@@ -1,0 +1,21 @@
+{
+  "name": "w14-d01",
+  "version": "0.1.0",
+  "description": "Create and publish a module to the npm registry. The module could be as complex or simple as you want.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "codeable",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "carlosA",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "microbundle": "^0.11.0"
+  }
+}
