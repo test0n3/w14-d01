@@ -3,19 +3,31 @@
   "version": "0.1.0",
   "description": "Create and publish a module to the npm registry. The module could be as complex or simple as you want.",
   "main": "index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "source": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "microbundle",
+    "prebuild": "npm run build"
   },
   "keywords": [
     "codeable",
     "javascript",
     "nodejs"
   ],
+  "repository": "https://github.com/test0n3/w14-d01.git",
   "author": "carlosA",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0",
     "eslint": "^5.16.0",
-    "microbundle": "^0.11.0"
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "microbundle": "^0.11.0",
+    "prettier": "^1.17.1"
   }
 }
